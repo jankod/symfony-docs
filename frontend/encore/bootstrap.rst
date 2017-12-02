@@ -24,7 +24,7 @@ a ``global.scss`` file, import it from there:
     $brand-primary: darken(#428bca, 20%);
 
     // the ~ allows you to reference things in node_modules
-    @import '~bootstrap-sass/assets/stylesheets/bootstrap';
+    @import "~bootstrap/scss/bootstrap";
 
 That's it! This imports the ``node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss``
 file into ``global.scss``. You can even customize the Bootstrap variables first!
@@ -59,6 +59,7 @@ To load Bootstrap, you'll need to override the path to its icons:
 
     + // set if you're also including font-awesome
     + // $fa-font-path: "~font-awesome/fonts";
+
 
     @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
